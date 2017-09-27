@@ -3,10 +3,10 @@
 <html lang="en">
 
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link href="anime web/anime.js_files/anime.css" rel="stylesheet">
+  <link href="anime.css" rel="stylesheet">
   
 
-    <title>SVG</title>
+    <title>我的背景</title>
     <style type="text/css">
 	body{
 	overflow:hidden;
@@ -84,14 +84,29 @@ L194.589,212.583z"></path>
     <use xlink:href="#pathSymbol" id="path2"></use>
 </g>
 </svg>
-<a href="" onclick="alert('勾玉傻逼')" style = "position:absolute;margin:100px -37px;font-size:30px;border-color:#0f0f">点我</a>
+<a id = "gysb" href="#" onclick="gysb()" style = "position:absolute;margin:100px -67px;font-size:30px;border-color:#0f0f">点我试试</a>
 
-<script type="text/javascript" src="anime web/anime.js_files/anime.min.js"></script>
-<script type="text/javascript" src="anime web/anime.js_files/fireworks.js"></script>
-<script type="text/javascript" src="anime web/anime.js_files/analytics.js"></script>
+<script type="text/javascript" src="anime.min.js"></script>
+<script type="text/javascript" src="fireworks.js"></script>
+<script type="text/javascript" src="analytics.js"></script>
 <script type="text/javascript">
 fireworks.setCanvasSize();
-
+function gysb(){
+	var sb =  "点我试试";
+	switch(Math.floor( Math.random()*5 )){
+		case 0 : sb=  "够味傻逼";
+			break;
+		case 1 :  sb= "勾玉傻逼";
+			break;
+		case 2: sb= "九狗傻逼";
+			break;
+		case 3: sb =  "狗吠傻逼"; 
+			break;
+		case 4 : sb=  "够眼傻逼";
+			break;
+	}
+	document.getElementById("gysb").innerHTML = sb;
+}
 function draw(className) {
 var path = document.querySelector(className);
 
